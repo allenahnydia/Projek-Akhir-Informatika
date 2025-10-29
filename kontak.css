@@ -1,0 +1,159 @@
+body{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url(https://www.theungasan.com/wp-content/uploads/2023/07/la-plancha.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+nav{
+  background: transparent;
+  margin-left: auto;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+  text-align: left;
+}
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li{
+  position: relative;
+  margin: 0 15px;
+}
+
+nav ul li a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  display: block;
+}
+
+nav ul li a:hover{
+  background: rgb(165, 165, 169);
+  border-radius: 5px;
+}
+
+nav ul li ul{
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: rgb(255, 255, 255);
+  list-style: none;
+  padding: 0%;
+  margin: 0%;
+  border-radius: 5px;
+}
+
+nav ul li ul li{
+  margin: 0%;
+  width: 150px;
+}
+
+nav ul li ul li a{
+  padding: 10px;
+  font-weight: normal;
+}
+
+nav ul li:hover ul{
+  display: block;
+} 
+
+nav ul li:hover ul li a:hover{
+  background-color: rgb(165, 165, 169);
+}
+    
+#logo{
+  cursor: pointer;
+  height: 50px;
+  margin: 0;
+  margin-left: auto;
+}
+
+header{
+  position: sticky;
+  padding-left: 20px;
+  top: 0;
+  background: white;
+  border-bottom: 2px solid white;
+  z-index: 3;
+  display: flex;
+  align-items: right;
+}
+
+main h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.contact-form {
+  width: 400px;               
+  margin: 50px auto;          
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 15px;       
+  box-shadow: 0 4px 8px rgb(0, 0, 0); 
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; 
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+  outline-style: none;
+}
+
+.contact-form input[type="submit"] {
+  display: block;
+  margin: 20px auto 0;
+  background-color: rgb(196, 196, 196);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #7b7b7b;
+}
+
+footer {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  padding: 37px 100px;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer p {
+  margin: 0;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link rel="stylesheet" href="kontak.css">
+    <link rel="icon" type="image/x-icon" href="^">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="FOTO/logo black.png" id="logo" alt="Logo">Hello Bali</a>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#">Tempat Wisata</a>
+                <li><a href="#">Kuliner</a></li>
+                <li><a href="#">Hotel dan Villa</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-form">
+        <h2>Kontak</h2>
+        <form onsubmit="return showPopup()"> 
+            <label for="nama">Nama :</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda">
+            <label for="pesan">Pesan :</label>
+            <textarea id="pesan" name="pesan" rows="5" placeholder="Sampaikan pesan Anda"></textarea>
+            <input type="submit" value="Submit">
+        </form>        
+    <br><br>
+        <script>
+          function showPopup(){
+            alert("Pesan telah diterima, anda sudah submit");
+            window.location.href="index.html";
+            return false;
+        }
+        </script>                          
+    </main>
+
+    <footer>
+        <p>&copy; Projek Akhir Informatika 2025 SMAN 3 Bandung</p>
+    </footer>
+
+</body>
+</html>

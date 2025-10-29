@@ -1,0 +1,290 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav{
+    background: transparent;
+    margin-left: auto;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    text-align: left;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    position: relative;
+    margin: 0 15px;
+    }
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: block;
+    }
+
+nav ul li a:hover{
+    background: rgb(165, 165, 169);
+    border-radius: 5px;
+    }
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: rgb(255, 255, 255);
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    border-radius: 5px;
+    }
+
+nav ul li ul li{
+    margin: 0%;
+    width: 150px;
+    }
+
+nav ul li ul li a{
+    padding: 10px;
+    font-weight: normal;
+    }
+
+nav ul li:hover ul{
+    display: block;
+    } 
+
+nav ul li:hover ul li a:hover{
+    background-color: rgb(165, 165, 169);
+    }
+
+.banner{
+    background-image: url(FOTO/ss.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    place-items: center;
+    display: grid;
+}
+
+#logo{
+    cursor: pointer;
+    height: 50px;
+    margin: 0;
+    margin-left: auto;
+}
+
+header{
+    position: sticky;
+    padding-left: 20px;
+    top: 0;
+    background: var(#ffffff);
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid white;
+    z-index: 3;
+    display: flex;
+    align-items: right;
+}
+
+.banner h3{
+    font-size:80px;
+    font-weight:800;
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 3px 8px #333;
+}
+
+/* ===== SEMINYAK SECTION – CREATIVE VERSION ===== */
+.info-daerah {
+  background: linear-gradient(135deg, #fefaf4 0%, #fff5e1 100%);
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background dekoratif lembut */
+.info-daerah::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 204, 128, 0.25), transparent 70%);
+  border-radius: 50%;
+}
+
+.container-daerah {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  max-width: 1200px;
+  width: 90%;
+  position: relative;
+  z-index: 2;
+}
+
+/* GAMBAR */
+.container-daerah img {
+  width: 420px;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  filter: brightness(0.95) contrast(1.05);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.4s ease, filter 0.4s ease;
+}
+
+.container-daerah img:hover {
+  transform: scale(1.07) rotate(-2deg);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+  filter: brightness(1) contrast(1.1);
+}
+
+/* TEKS */
+.text-daerah {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 35px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  color: #2b2b2b;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  text-align: justify;
+  transition: all 0.4s ease;
+}
+
+.text-daerah:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* JUDUL */
+.text-daerah h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ANIMASI MASUK */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container-daerah {
+  animation: fadeUp 1.2s ease both;
+}
+
+
+.wisata-seminyak {
+  background-color: #f7f3e9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.wisata-seminyak h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.wisata-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.wisata-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.wisata-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.wisata-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.wisata-card h3 {
+  font-size: 1.3rem;
+  margin: 15px;
+  color: #2e2e2e;
+}
+
+.wisata-card p {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: justify;
+  margin: 0 15px 20px;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  align-self: flex-start;
+  margin: 0 15px 20px;
+  padding: 8px 16px;
+  background-color: #acacac;
+  color: #000000;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #7b7878;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  padding: 25px 10px;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer p {
+  margin: 0;
+}
