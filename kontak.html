@@ -3,48 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="kontak.css">
-    <link rel="icon" type="image/x-icon" href="^">
+    <link rel="icon" type="image/x-icon" href="FOTO/logo black.png">
 </head>
 <body>
-    <header>
+<header>
+    <h2><a id="hellobali" href="index.html"><img src="FOTO/logo black.png" id="logo" alt="Logo">Hello Bali</a></h2>
         <nav>
-            <a href="index.html"><img src="FOTO/logo black.png" id="logo" alt="Logo">Hello Bali</a>
             <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="#">Tempat Wisata</a>
-                <li><a href="#">Kuliner</a></li>
-                <li><a href="#">Hotel dan Villa</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#daerah">Tourist Attraction</a>
+                    <ul>
+                        <li><a href="seminyak.html">Seminyak</a></li>
+                        <li><a href="ubud.html">Ubud</a></li>
+                        <li><a href="kuta.html">Kuta</a></li>
+                        <li><a href="canggu.html">Canggu</a></li>
+                        <li><a href="uluwatu.html">Uluwatu</a></li>
+                        <li><a href="nusadua.html">Nusa Dua</a></li>
+                    </ul>
+                </li>
+                <li><a href="kuliner.html">Culinary Place</a></li>
+                <li><a href="hotel.html">Hotels & Villas</a></li>
+                <li><a href="kontak.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
+</header>
 
-    <main class="contact-form">
-        <h2>Kontak</h2>
+<main class="contact-form">
+    <h2>Contact</h2>
         <form onsubmit="return showPopup()"> 
-            <label for="nama">Nama :</label>
-            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda">
+            <label for="nama">Name :</label>
+            <input type="text" id="nama" name="nama" placeholder="Enter your name">
             <label for="email">Email :</label>
-            <input type="email" id="email" name="email" placeholder="Masukkan email Anda">
-            <label for="pesan">Pesan :</label>
-            <textarea id="pesan" name="pesan" rows="5" placeholder="Sampaikan pesan Anda"></textarea>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <label for="pesan">Message :</label>
+            <textarea id="pesan" name="pesan" rows="5" placeholder="Write your message"></textarea>
             <input type="submit" value="Submit">
         </form>        
     <br><br>
         <script>
           function showPopup(){
-            alert("Pesan telah diterima, anda sudah submit");
+            alert("The message has been received, you have submitted it");
             window.location.href="index.html";
             return false;
         }
         </script>                          
-    </main>
+</main>
 
-    <footer>
-        <p>&copy; Projek Akhir Informatika 2025 SMAN 3 Bandung</p>
-    </footer>
+<footer>
+    <p>&copy; Projek Akhir Informatika 2025 SMAN 3 Bandung</p>
+</footer>
 
 </body>
 </html>

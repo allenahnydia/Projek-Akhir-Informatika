@@ -1,18 +1,58 @@
+
 body{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  color: #222;
   background-image: url(https://www.theungasan.com/wp-content/uploads/2023/07/la-plancha.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+
+header{
+  position: sticky;
+  padding-left: 20px;
+  top: 0;
+  background: white;
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid white;
+  z-index: 3;
+  display: flex;
+  align-items: right;
+}
+
+#hellobali {
+  color: black;
+  text-decoration: none;
+  text-align: center;      
+  text-transform: uppercase; 
+  margin-top: 0px;        
+  top: -10px;               
+  font-size: 30px;        
+  font-weight: bold;  
+  display: flex;    
+}
+
+#logo{
+  margin-top: 0px;
+  cursor: pointer;
+  height: 70px;
   margin: 0;
-  padding: 0;
-  height: 100%;
+  margin-left: auto;
+  display: flex;
+  width: 40px;
+  height: 30px;
+  margin-right: 10px;
 }
 
 nav{
-  background: transparent;
-  margin-left: auto;
+  background: white;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
 }
 
 nav a{
@@ -75,24 +115,6 @@ nav ul li:hover ul{
 nav ul li:hover ul li a:hover{
   background-color: rgb(165, 165, 169);
 }
-    
-#logo{
-  cursor: pointer;
-  height: 50px;
-  margin: 0;
-  margin-left: auto;
-}
-
-header{
-  position: sticky;
-  padding-left: 20px;
-  top: 0;
-  background: white;
-  border-bottom: 2px solid white;
-  z-index: 3;
-  display: flex;
-  align-items: right;
-}
 
 main h2 {
   color: rgb(0, 0, 0);
@@ -101,7 +123,7 @@ main h2 {
 
 .contact-form {
   width: 400px;               
-  margin: 50px auto;          
+  margin: 100px auto;          
   background-color: #ffffff; 
   padding: 20px;
   border-radius: 15px;       
