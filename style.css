@@ -112,7 +112,7 @@ nav ul li:hover ul li a:hover{
 }
 
 .banner{
-  background-image: url(FOTO/banner.jpeg);
+  background-image: url('FOTO/banner.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -296,4 +296,5 @@ footer {
 
 footer p {
   margin: 0;
+
 }
